@@ -1,6 +1,6 @@
 import { CustomErrorHandler } from "../services/customErrorHandler.js";
 import Joi from "joi";
-const DEBUG_MODE = process.env.DEBUG_MODE || "true";
+const DEBUG_MODE = process.env.DEBUG_MODE || "false";
 const errorHandler = (err,req,res,next)=>{
     let statusCode =500;
     let data = {
